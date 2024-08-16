@@ -23,7 +23,7 @@ const ExcalidrawWrapper = () => {
           <h2 className="text-2xl font-semibold">Certificate Fields</h2>
         </Sidebar.Header>
         {/** @ts-expect-error */}
-        <Sidebar.Tabs style={{ padding: '1rem' }}>
+        <Sidebar.Tabs style={{ padding: '1rem', overflow: 'auto' }}>
           <Sidebar.TabTriggers>
             <Sidebar.TabTrigger tab="actorFields">
               Actor Fields
@@ -33,13 +33,13 @@ const ExcalidrawWrapper = () => {
             </Sidebar.TabTrigger>
           </Sidebar.TabTriggers>
           <Sidebar.Tab
-            className="mt-2 rounded border border-solid p-2"
+            className="mt-2 rounded border border-solid p-2 relative h-full overflow-auto"
             tab="actorFields"
           >
             <ActorFields />
           </Sidebar.Tab>
           <Sidebar.Tab
-            className="mt-2 rounded border border-solid p-2"
+            className="mt-2 rounded border border-solid p-2 relative h-full overflow-auto"
             tab="customFields"
           >
             <CustomFields />
