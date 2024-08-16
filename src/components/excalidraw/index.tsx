@@ -9,7 +9,15 @@ import CustomFields from '../custom-fields'
 const ExcalidrawWrapper = () => {
   return (
     <Excalidraw>
-      <MainMenu></MainMenu>
+      <MainMenu>
+        <MainMenu.DefaultItems.SaveAsImage />
+        <MainMenu.Item onSelect={() => alert('Menu 1 clicked!')}>
+          Menu 1
+        </MainMenu.Item>
+        <MainMenu.Item onSelect={() => alert('Menu 2 clicked!')}>
+          Menu 2
+        </MainMenu.Item>
+      </MainMenu>
       <Sidebar name="customSidebar">
         <Sidebar.Header>
           <h2 className="text-2xl font-semibold">Certificate Fields</h2>
@@ -44,7 +52,7 @@ const ExcalidrawWrapper = () => {
           tab="actorFields"
           className={cn('!text-primary-foreground', '!bg-purple-950')}
           style={{
-            marginLeft: '0.5rem',
+            marginLeft: '0.6rem',
             fontSize: 16,
             fontWeight: 500,
           }}
