@@ -9,12 +9,12 @@ Validated on Node.js **24.22.1**; package engines remain **24.x**. The provider 
 - node: 24.22.1
 - engines: 24.x
 - packageManager: npm@11.19.1
-- next: unavailable
+- next: 16.4.3
 - react: 19.2.9
-- react-dom: unavailable
+- react-dom: 19.2.9
 - eslint-config-next: 16.4.3
 - @types/node: 24.19.2
-- @excalidraw/excalidraw: unavailable
+- @excalidraw/excalidraw: 0.18.1
 
 - Excalidraw nested Radix tabs supports React 19. Security overrides patch lodash-es within major 4, nanoid 3/5 within their majors and the nested Mermaid converter from ESM nanoid 4 to patched ESM nanoid 5.
 - Actor/custom field buttons are placeholders in the existing application; the upgrade preserves their behavior.

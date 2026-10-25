@@ -18,12 +18,12 @@
     "node": "24.22.1",
     "engines": "24.x",
     "packageManager": "npm@11.19.1",
-    "next": "unavailable",
+    "next": "16.4.3",
     "react": "19.2.9",
-    "react-dom": "unavailable",
+    "react-dom": "19.2.9",
     "eslint-config-next": "16.4.3",
     "@types/node": "24.19.2",
-    "@excalidraw/excalidraw": "unavailable"
+    "@excalidraw/excalidraw": "0.18.1"
   },
   "lockfile": "package-lock.json",
   "lockSha256": "b87ce506a1ca9ba54a0be59803d9371ea9ad9721efe36bc6e432ad90081ec419",
@@ -170,7 +170,7 @@
       "node": "v24.22.1",
       "exit": 1,
       "signal": null,
-      "seconds": 25
+      "seconds": 2
     },
     {
       "phase": "final-production-audit",
@@ -178,7 +178,7 @@
       "node": "v24.22.1",
       "exit": 1,
       "signal": null,
-      "seconds": 1
+      "seconds": 2
     },
     {
       "phase": "final-browser",
@@ -226,7 +226,7 @@
       "node": "v24.22.1",
       "exit": 0,
       "signal": null,
-      "seconds": 125
+      "seconds": 81
     },
     {
       "phase": "verified-browser",
