@@ -1,0 +1,294 @@
+{
+  "date": "2026-10-25",
+  "repository": "x-canvas-svg",
+  "baselineHead": "37985a10d2ff670bfca0e6188afb7097915bacce",
+  "baselineVersions": {
+    "@excalidraw/excalidraw": "^0.17.6",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.428.0",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "versions": {
+    "node": "24.22.1",
+    "engines": "24.x",
+    "packageManager": "npm@11.19.1",
+    "next": "unavailable",
+    "react": "19.2.9",
+    "react-dom": "unavailable",
+    "eslint-config-next": "16.4.3",
+    "@types/node": "24.19.2",
+    "@excalidraw/excalidraw": "unavailable"
+  },
+  "lockfile": "package-lock.json",
+  "lockSha256": "b87ce506a1ca9ba54a0be59803d9371ea9ad9721efe36bc6e432ad90081ec419",
+  "baselineAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 4,
+    "high": 14,
+    "critical": 1,
+    "total": 19
+  },
+  "audits": {
+    "all": {
+      "counts": {
+        "info": 0,
+        "low": 4,
+        "moderate": 3,
+        "high": 0,
+        "critical": 0,
+        "total": 7
+      },
+      "highOrCritical": []
+    },
+    "production": {
+      "counts": {
+        "info": 0,
+        "low": 4,
+        "moderate": 3,
+        "high": 0,
+        "critical": 0,
+        "total": 7
+      },
+      "highOrCritical": []
+    }
+  },
+  "checks": [
+    {
+      "phase": "baseline-install",
+      "command": "npm ci --no-audit --no-fund",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 137
+    },
+    {
+      "phase": "baseline-audit",
+      "command": "npm audit --json",
+      "node": "v24.22.1",
+      "exit": 1,
+      "signal": null,
+      "seconds": 96
+    },
+    {
+      "phase": "baseline-build",
+      "command": "npm run build",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 75
+    },
+    {
+      "phase": "upgrade-install",
+      "command": "npm install --no-audit --no-fund",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 256
+    },
+    {
+      "phase": "peer-check",
+      "command": "npm ls react react-dom --all --json",
+      "node": "v24.22.1",
+      "exit": 1,
+      "signal": null,
+      "seconds": 41
+    },
+    {
+      "phase": "upgrade-lint",
+      "command": "npm run lint",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 95
+    },
+    {
+      "phase": "upgrade-build",
+      "command": "npm run build",
+      "node": "v24.22.1",
+      "exit": 1,
+      "signal": null,
+      "seconds": 156
+    },
+    {
+      "phase": "peer-compatible-install",
+      "command": "npm install --no-audit --no-fund",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 45
+    },
+    {
+      "phase": "final-lint",
+      "command": "npm run lint",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 4
+    },
+    {
+      "phase": "final-typecheck",
+      "command": "npm run typecheck",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 3
+    },
+    {
+      "phase": "final-build",
+      "command": "npm run build",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 142
+    },
+    {
+      "phase": "browser-dependency-install",
+      "command": "npm install --no-audit --no-fund",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 17
+    },
+    {
+      "phase": "frozen-install",
+      "command": "npm ci --no-audit --no-fund",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 124
+    },
+    {
+      "phase": "final-audit",
+      "command": "npm audit --json",
+      "node": "v24.22.1",
+      "exit": 1,
+      "signal": null,
+      "seconds": 25
+    },
+    {
+      "phase": "final-production-audit",
+      "command": "npm audit --json --omit=dev",
+      "node": "v24.22.1",
+      "exit": 1,
+      "signal": null,
+      "seconds": 1
+    },
+    {
+      "phase": "final-browser",
+      "command": "npm run test:e2e",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 9
+    },
+    {
+      "phase": "browser-recheck",
+      "command": "npm run test:e2e",
+      "node": "v24.22.1",
+      "exit": 1,
+      "signal": null,
+      "seconds": 44
+    },
+    {
+      "phase": "safe-audit-fix",
+      "command": "npm audit fix --no-fund",
+      "node": "v24.22.1",
+      "exit": 1,
+      "signal": null,
+      "seconds": 41
+    },
+    {
+      "phase": "patched-transitives-install",
+      "command": "npm install --no-audit --no-fund",
+      "node": "v24.22.1",
+      "exit": 4294963245,
+      "signal": null,
+      "seconds": 59
+    },
+    {
+      "phase": "lock-repair",
+      "command": "npm install --package-lock-only --ignore-scripts --no-audit --no-fund",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 37
+    },
+    {
+      "phase": "clean-frozen-install",
+      "command": "npm ci --no-fund --no-audit",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 125
+    },
+    {
+      "phase": "verified-browser",
+      "command": "npm run test:e2e",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 10
+    },
+    {
+      "phase": "nanoid3-patch-install",
+      "command": "npm install --no-audit --no-fund",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 2
+    },
+    {
+      "phase": "nanoid4-patch-install",
+      "command": "npm install --no-audit --no-fund",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 4
+    },
+    {
+      "phase": "patched-build",
+      "command": "npm run build",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 81
+    },
+    {
+      "phase": "patched-browser",
+      "command": "npm run test:e2e",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 8
+    },
+    {
+      "phase": "editor-export-browser",
+      "command": "npm run test:e2e",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 6
+    },
+    {
+      "phase": "format-e2e",
+      "command": "npm exec -- prettier --write tests/e2e/excalidraw.spec.ts",
+      "node": "v24.22.1",
+      "exit": 0,
+      "signal": null,
+      "seconds": 1
+    }
+  ],
+  "browser": null,
+  "notes": [
+    "Excalidraw nested Radix tabs supports React 19. Security overrides patch lodash-es within major 4, nanoid 3/5 within their majors and the nested Mermaid converter from ESM nanoid 4 to patched ESM nanoid 5.",
+    "Actor/custom field buttons are placeholders in the existing application; the upgrade preserves their behavior."
+  ],
+  "blockers": []
+}
